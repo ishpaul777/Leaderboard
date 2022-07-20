@@ -1,9 +1,10 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
 
 > Leaderboard is a website that has its data preserved with the external Leaderboard API serice. It displays the names and scores of different people and also allows you add your own score to the leaderboard.
 
+## Screenshots 📸
+![](./src/assets/Screenshot-project.png)
 
 ## Built With
 
@@ -19,14 +20,7 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
-
-
 
 - You can clone this repo by typing git clone https://github.com/ishpaul777/Leaderboard.git on your terminal.
 - Type cd Leaderboard-Project to access the project on the terminal.
