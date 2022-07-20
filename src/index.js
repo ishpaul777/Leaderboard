@@ -1,8 +1,8 @@
-// eslint-disable import/no-named-as-default
+/* eslint-disable  import/prefer-default-export */
 import './styles.css';
 
 import { displayScores } from './displayScore.js';
-import { submitScore } from './submitScore';
+import { submitScore } from './submitScore.js';
 
 const addScore = document.querySelector('#add-score');
 const refreshScoreBtn = document.querySelector('.btn-refresh');
@@ -20,6 +20,4 @@ addScore.addEventListener('submit', (e) => {
 
 document.addEventListener('DOMContentLoaded', displayScores);
 
-refreshScoreBtn.addEventListener('click', () => {
-  displayScores();
-});
+refreshScoreBtn.addEventListener('click', displayScores);

@@ -2,10 +2,16 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+body {
+  background: url(./assets/bg-intro-mobile.png);
+  background-position: top, left -12rem bottom 15rem;
+  background-repeat: no-repeat;
+}
+
 h1 {
   text-align: center;
   font-size: 40px;
-  color: #fff;
+  color: #191826;
 }
 
 .section-head {
@@ -16,8 +22,12 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 34px;
-  color: #fff;
+  font-size: 30px;
+  color: #191826;
+}
+
+h1 .bi {
+  color: #fa7453;
 }
 
 .btn-refresh {
@@ -26,13 +36,8 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   color: #fff;
-  background: hsl(154, 59%, 51%);
+  background: #fa7453;
   font-size: 15px;
-}
-
-body {
-  /* background: hsl(0, 100%, 74%) url(./assets/bg-intro-desktop.png); */
-  background-color: hsl(249, 10%, 26%);
 }
 
 main {
@@ -54,21 +59,42 @@ th,
 td {
   padding: 10px 15px;
   text-align: left;
-  color: hsl(249, 10%, 26%);
+  color: #fff;
 }
 
 th {
-  background-color: hsl(0, 0%, 92%);
-  color: hsl(154, 59%, 51%);
+  background-color: #191826;
+  color: #fa7453;
+}
+
+th:nth-of-type(1) {
+  border-radius: 16px 0 0 0;
+}
+
+th:nth-of-type(2) {
+  border-radius: 0 16px 0 0;
 }
 
 tr:nth-of-type(even) {
-  background-color: hsl(0, 0%, 92%);
+  background-color: #191826;
+}
+
+tbody tr:nth-of-type(odd) td {
+  color: #191819;
+  background-color: #fa745336;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 16px !important;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 16px 0 !important;
 }
 
 #add-score {
   width: 80vw;
-  background-color: #fff;
+  background-color: #191826;
   border-radius: 13px;
   padding: 60px 20px;
   font-size: 18px;
@@ -76,6 +102,7 @@ tr:nth-of-type(even) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .fieldset {
@@ -90,23 +117,51 @@ tr:nth-of-type(even) {
   padding: 16px;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
+  outline: 0;
+}
+
+.alert {
+  font-size: 13px;
+  padding: 13px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.alert.success {
+  background-color: #7dd2c5;
+}
+
+.alert.invalid {
+  background-color: rgb(220, 55, 55);
+  color: #fff;
 }
 
 .btn-add-score {
   width: 85%;
   font-size: 18px;
   color: #fff;
-  background: hsl(154, 59%, 51%);
+  background: #fa7453;
   padding: 16px;
   border: 0;
   border-radius: 8px;
   cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: 820px) {
+  body {
+    background: url(./assets/bg-intro-desktop.png), url(./assets/bg-top.svg);
+    background-position: top, left -8rem top;
+    background-repeat: no-repeat;
+  }
+
   main {
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin-top: 100px;
+    align-items: flex-start;
   }
 
   #add-score {
