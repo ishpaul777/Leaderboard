@@ -120,7 +120,7 @@ table tr:last-child td:last-child {
   outline: 0;
 }
 
-.alert { 
+.alert {
   font-size: 13px;
   padding: 13px;
   margin-bottom: 10px;
@@ -130,6 +130,7 @@ table tr:last-child td:last-child {
 .alert.success {
   background-color: #7dd2c5;
 }
+
 .alert.invalid {
   background-color: rgb(220, 55, 55);
   color: #fff;
@@ -149,10 +150,11 @@ table tr:last-child td:last-child {
 button:hover {
   opacity: 0.8;
 }
+
 @media (min-width: 820px) {
   body {
     background: url(./assets/bg-intro-desktop.png), url(./assets/bg-top.svg);
-    background-position: top, left -8rem top ;
+    background-position: top, left -8rem top;
     background-repeat: no-repeat;
   }
 
