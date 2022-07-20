@@ -14,9 +14,9 @@
 - Webpack
 - API 
 
-## Live Demo (Available Soon)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+A live version of the working website can be seen [here](https://ishpaul777.github.io/Leaderboard/)
 
 
 ## Getting Started
