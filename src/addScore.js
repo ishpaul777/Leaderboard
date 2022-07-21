@@ -1,6 +1,7 @@
 /* eslint-disable  import/prefer-default-export */
 
-export const addScore = async (playerName, playerScore) => {
+// add score to list
+export const addScore = (playerName, playerScore) => {
   const displayScoreSection = document.querySelector('.score-list');
   const row = document.createElement('tr');
   row.innerHTML = `
